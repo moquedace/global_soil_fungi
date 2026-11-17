@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="Global soil fungi: diversity, ectomycorrhizal structure and taxonomic resolution at 250 m" width="100%">
+  <img src="assets/institution_logos.png" alt="GeoCiS, ESALQ, CCARBON, The University of Sydney, LabGeo, Department of Soils (UFV), UFV and Aarhus University logos" width="860">
 </p>
 
-<!-- research group logos (LabGeo/UFV, GeoCiS and CCARBON/ESALQ-USP, Sydney Institute of Agriculture, Aarhus University): to be added -->
+<p align="center">
+  <img src="assets/hero.svg" alt="Global soil fungi: diversity, ectomycorrhizal structure and taxonomic resolution at 250 m" width="100%">
+</p>
 
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.24292559"><img alt="Maps DOI" src="https://img.shields.io/badge/maps-10.5281%2Fzenodo.24292559-c98b50?style=flat-square"></a>

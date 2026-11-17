@@ -1,0 +1,38 @@
+{
+  "title": "Global soil fungi: R workflow for global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m",
+  "description": "R and Google Earth Engine code supporting the article Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest (Moquedace et al.). The workflow builds a 146-layer covariate stack at 250 m (Equal Earth), derives six fungal community dimensions from GloSED, fits quantile random forest models with spatial block validation, predicts the median, standard deviation and 5, 25, 75 and 95% quantiles in every cell, and prepares the figures, tables and distribution copies (Zenodo and Google Earth Engine).",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "creators": [
+    {"name": "Moquedace, C\u00e1ssio Marques", "orcid": "0000-0002-7673-4524", "affiliation": "University of S\u00e3o Paulo"},
+    {"name": "Baldi, Clara Gl\u00f3ria Oliveira", "orcid": "0000-0003-3079-5986", "affiliation": "Universidade Federal de Vi\u00e7osa"},
+    {"name": "Gomes, Lucas Carvalho", "orcid": "0000-0002-2105-2470", "affiliation": "Aarhus University"},
+    {"name": "Siqueira, Rafael Gomes", "orcid": "0000-0003-2779-136X", "affiliation": "Universidade Federal de Vi\u00e7osa"},
+    {"name": "Xue, Peipei", "orcid": "0000-0001-5207-1992", "affiliation": "The University of Sydney"},
+    {"name": "Minasny, Budiman", "orcid": "0000-0002-1182-2371", "affiliation": "The University of Sydney"},
+    {"name": "Schaefer, Carlos Ernesto Gon\u00e7alves Reynaud", "orcid": "0000-0001-7060-1598", "affiliation": "Federal University of Rio de Janeiro"},
+    {"name": "Francelino, M\u00e1rcio Rocha", "orcid": "0000-0001-8837-1372", "affiliation": "Universidade Federal de Vi\u00e7osa"},
+    {"name": "Cerri, Carlos Eduardo Pellegrino", "orcid": "0000-0002-4374-4056", "affiliation": "University of S\u00e3o Paulo"},
+    {"name": "Poppiel, Ra\u00fal Roberto", "orcid": "0000-0002-1628-4154", "affiliation": "University of S\u00e3o Paulo"},
+    {"name": "Pelegrino, Marcelo Henrique Proc\u00f3pio", "orcid": "0000-0002-0963-1189", "affiliation": "University of S\u00e3o Paulo"},
+    {"name": "Soares, Lucas Ulyss\u00e9a Leal", "orcid": "0009-0009-4041-341X", "affiliation": "Universidade Federal de Vi\u00e7osa"},
+    {"name": "Dematt\u00ea, Jos\u00e9 Alexandre Melo", "orcid": "0000-0001-5328-0323", "affiliation": "University of S\u00e3o Paulo"},
+    {"name": "Fernandes-Filho, Elp\u00eddio In\u00e1cio", "orcid": "0000-0003-2440-8329", "affiliation": "Universidade Federal de Vi\u00e7osa"}
+  ],
+  "keywords": [
+    "soil fungi",
+    "digital soil mapping",
+    "quantile random forest",
+    "ectomycorrhizal fungi",
+    "DNA metabarcoding",
+    "prediction uncertainty",
+    "Google Earth Engine",
+    "R"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.24292559", "relation": "isSourceOf", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "10.5281/zenodo.17827890", "relation": "references", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "10.1038/s41597-026-07315-y", "relation": "references", "scheme": "doi", "resource_type": "publication-article"}
+  ]
+}

@@ -1,0 +1,39 @@
+Type: Project
+Package: globalsoilfungi
+Title: Global Maps of Soil Fungal Diversity, Ectomycorrhizal Structure and Taxonomic Resolution at 250 m
+Version: 1.0.0
+Description: R workflow supporting the global 250 m maps of six soil fungal
+    community dimensions: covariate stack, response variables from GloSED,
+    quantile random forest with spatial block validation, prediction with
+    uncertainty, figures, tables and distribution copies.
+License: MIT + file LICENSE
+Depends: R (>= 4.5.0)
+Imports:
+    arrow,
+    caret (>= 7.0-1),
+    DescTools,
+    doParallel,
+    dplyr,
+    foreach,
+    future,
+    future.apply,
+    ggplot2,
+    hdf5r,
+    jsonlite,
+    matrixStats,
+    patchwork,
+    purrr,
+    quantregForest (== 1.4-0),
+    ragg,
+    randomForest,
+    readr,
+    readxl,
+    scales,
+    sf,
+    stringr,
+    terra (>= 1.9-50),
+    tibble,
+    tidyr,
+    tidyselect,
+    zCompositions
+Encoding: UTF-8

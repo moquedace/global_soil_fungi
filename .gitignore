@@ -1,0 +1,28 @@
+# code only: data, derived files and outputs never enter this repository
+data/
+derived/
+outputs/
+*.tif
+*.tiff
+*.ovr
+*.aux.xml
+*.vrt
+*.gpkg
+*.shp
+*.rds
+*.RData
+*.rda
+*.parquet
+*.zip
+*.gz
+*.nc
+
+# R and system
+.Rhistory
+.Rproj.user/
+Thumbs.db
+desktop.ini
+
+# credentials
+*token*
+.Renviron

@@ -22,7 +22,7 @@ software context.
 | Methods, Covariate extraction and sampling density | Covariates at the samples, spatial blocks, declustering weights | [`03_modeling/01_extract_covariates.R`](../scripts/03_modeling/01_extract_covariates.R), [`functions/model_common.R`](../scripts/functions/model_common.R) |
 | Methods, Predictor selection; Model fitting; Text S3 | Filters, RFE and quantile random forest of the final model | [`03_modeling/02_fit_final_model.R`](../scripts/03_modeling/02_fit_final_model.R) |
 | Methods, Assessment of predictive performance; Text S3 | Spatial hold-out repeated 100 times | [`03_modeling/03_spatial_holdout.R`](../scripts/03_modeling/03_spatial_holdout.R), [`hpc/`](../hpc/README.md) |
-| Methods, Map products | Prediction of the six bands per cell, mosaics | [`04_prediction/01_predict_tiles.R`](../scripts/04_prediction/01_predict_tiles.R), [`02_mosaic.R`](../scripts/04_prediction/02_mosaic.R) |
+| Methods, Model fitting and spatial prediction; Text S4 | Prediction of the six bands per cell, mosaics | [`04_prediction/01_predict_tiles.R`](../scripts/04_prediction/01_predict_tiles.R), [`02_mosaic.R`](../scripts/04_prediction/02_mosaic.R) |
 | Data Availability | Zenodo and Earth Engine copies | [`06_distribution/01_distribution_copy.R`](../scripts/06_distribution/01_distribution_copy.R), [`gee/usage_example.js`](../scripts/06_distribution/gee/usage_example.js), [`gee/03_app.js`](../scripts/06_distribution/gee/03_app.js) (Earth Engine App) |
 | Figure 1 | Samples and biomes | [`05_figures_tables/01_figure1_samples_biomes.R`](../scripts/05_figures_tables/01_figure1_samples_biomes.R) |
 | Figure 2 | Observed responses by biome | [`02_figure2_observed_biomes.R`](../scripts/05_figures_tables/02_figure2_observed_biomes.R) |
@@ -33,6 +33,7 @@ software context.
 | Figure S1 | Climatic direction in the samples | [`08_figureS1_climate_direction.R`](../scripts/05_figures_tables/08_figureS1_climate_direction.R) |
 | Tables S1 and S2 | Covariates; performance | [`09_tableS1_covariates.R`](../scripts/05_figures_tables/09_tableS1_covariates.R), [`10_tableS2_performance.R`](../scripts/05_figures_tables/10_tableS2_performance.R) |
 | Numbers in the text | Correlations, bivariate classes, coverage, shares | [`11_numbers_in_text.R`](../scripts/05_figures_tables/11_numbers_in_text.R) |
+| Results; Text S3 | Resolution against diversity within biomes, error and coverage by guild detection, sequencing depth against the test residuals, distance to the nearest sample | [`12_holdout_checks.R`](../scripts/05_figures_tables/12_holdout_checks.R) |
 
 ## Input data
 
@@ -76,8 +77,10 @@ The public scripts keep the published protocol (sources, periods, grid,
 gap rules, filters, RFE sizes, tuning, seeds, number of repetitions,
 metrics, quantiles) and drop what only served the working environment:
 logs, retries on the network share, file checks against the frozen
-inputs, pilot and test runs, exploratory scripts and the checks requested
-during the co-author review. Three departures from the working code are
+inputs, pilot and test runs and exploratory scripts. The checks of the
+co-author review that the article reports are in
+[`12_holdout_checks.R`](../scripts/05_figures_tables/12_holdout_checks.R).
+Three departures from the working code are
 deliberate and do not change the results:
 
 - the Earth Engine exports write to Google Drive (a folder of your choice)

@@ -17,7 +17,7 @@ This repository contains the curated R and Google Earth Engine workflow behind g
 
 **Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I.** Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. *Manuscript under review; the reference will be added on publication.*
 
-The six dimensions follow three different geographies. Overall diversity is highest in the humid tropics, where the share of reads without a genus is also largest; EcM lineage diversity and the representation of EcM fungi are highest in temperate and boreal ecosystems; and high values of overall diversity and EcM lineage diversity coincide no more often than expected by chance.
+The six dimensions follow three different geographies. Overall diversity is highest in the humid tropics, where the share of reads without a genus is also largest; EcM lineage diversity and the representation of EcM fungi are highest in temperate, boreal and tundra ecosystems; and high values of overall diversity and EcM lineage diversity coincide about as often as expected under independence.
 
 ## At a glance
 
@@ -83,7 +83,7 @@ The model fitting and the spatial hold-out are heavy (days on a single machine);
 |   |-- 02_responses/         # GloSED download, genus traits, six responses, rarefaction test
 |   |-- 03_modeling/          # extraction, final model, spatial hold-out
 |   |-- 04_prediction/        # tiled prediction and mosaics
-|   |-- 05_figures_tables/    # Figures 1-8 and S1, Tables S1-S2, numbers in the text
+|   |-- 05_figures_tables/    # Figures 1-8 and S1, Tables S1-S2, numbers in the text, checks
 |   `-- 06_distribution/      # integer copies for Zenodo and Earth Engine (+ gee/: assets, usage, app)
 |-- tools/                    # documentation checks
 |-- .zenodo.json
@@ -122,7 +122,7 @@ The scripts keep the published protocol and drop what served only the working en
 
 ## Citation
 
-If you use the code, cite the article and the map dataset. Machine-readable metadata are in [`CITATION.cff`](CITATION.cff).
+If you use the code, cite the article, the map dataset and this code release. Machine-readable metadata are in [`CITATION.cff`](CITATION.cff).
 
 > Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I. Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. Manuscript under review; the reference will be added on publication.
 >
@@ -136,7 +136,7 @@ The code is released under the [MIT License](LICENSE). The maps on Zenodo are li
 
 ## Contact
 
-For questions about the code or the maps, use the corresponding-author details in the article or open a GitHub issue naming the script, the input and the error.
+For questions about the code or the maps, write to cassiomoquedace@gmail.com or open a GitHub issue naming the script, the input and the error.
 
 <p align="center">
   <img src="assets/institution_logos.png" alt="GeoCiS, ESALQ, CCARBON, The University of Sydney, LabGeo, Department of Soils (UFV), UFV and Aarhus University logos" width="800">

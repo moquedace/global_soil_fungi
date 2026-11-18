@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite it and the global map dataset (DOI below)."
+message: "If you use this code, please cite the article (under review), the map dataset and this code release."
 type: software
 title: "Global soil fungi: R workflow for global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m"
 version: 1.0.0
@@ -12,14 +12,8 @@ keywords:
   - ectomycorrhizal fungi
   - DNA metabarcoding
   - prediction uncertainty
+  - Google Earth Engine
   - R
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.24292559
-    description: "Global maps produced by this workflow (Zenodo, EPSG:8857, 250 m)"
-  - type: doi
-    value: 10.5281/zenodo.17827890
-    description: "GloSED, Global Standardised Soil Eukaryome Dataset, version 1.0.0 (input data)"
 authors:
   - family-names: Moquedace
     given-names: "C\u00e1ssio Marques"
@@ -28,7 +22,7 @@ authors:
   - family-names: Baldi
     given-names: "Clara Gl\u00f3ria Oliveira"
     orcid: "https://orcid.org/0000-0003-3079-5986"
-    affiliation: "Department of Soil Science, Universidade Federal de Vi\u00e7osa"
+    affiliation: "Department of Soil Science, Luiz de Queiroz College of Agriculture, University of S\u00e3o Paulo; Department of Soil Science, Universidade Federal de Vi\u00e7osa"
   - family-names: Gomes
     given-names: "Lucas Carvalho"
     orcid: "https://orcid.org/0000-0002-2105-2470"
@@ -77,3 +71,46 @@ authors:
     given-names: "Elp\u00eddio In\u00e1cio"
     orcid: "https://orcid.org/0000-0003-2440-8329"
     affiliation: "Department of Soil Science, Universidade Federal de Vi\u00e7osa"
+references:
+  - type: dataset
+    title: "Global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m"
+    doi: 10.5281/zenodo.24292559
+    authors:
+      - family-names: Moquedace
+        given-names: "C\u00e1ssio Marques"
+      - family-names: Baldi
+        given-names: "Clara Gl\u00f3ria Oliveira"
+      - family-names: Gomes
+        given-names: "Lucas Carvalho"
+      - family-names: Siqueira
+        given-names: "Rafael Gomes"
+      - family-names: Xue
+        given-names: "Peipei"
+      - family-names: Minasny
+        given-names: "Budiman"
+      - family-names: Schaefer
+        given-names: "Carlos Ernesto Gon\u00e7alves Reynaud"
+      - family-names: Francelino
+        given-names: "M\u00e1rcio Rocha"
+      - family-names: Cerri
+        given-names: "Carlos Eduardo Pellegrino"
+      - family-names: Poppiel
+        given-names: "Ra\u00fal Roberto"
+      - family-names: Pelegrino
+        given-names: "Marcelo Henrique Proc\u00f3pio"
+      - family-names: Soares
+        given-names: "Lucas Ulyss\u00e9a Leal"
+      - family-names: "Dematt\u00ea"
+        given-names: "Jos\u00e9 Alexandre Melo"
+      - family-names: Fernandes-Filho
+        given-names: "Elp\u00eddio In\u00e1cio"
+  - type: dataset
+    title: "GloSED - Global standardised soil eukaryome dataset"
+    version: 1.0.0
+    doi: 10.5281/zenodo.17827890
+    authors:
+      - family-names: Mikryukov
+        given-names: Vladimir
+      - name: "Global Soil Mycobiome consortium (GSMc)"
+      - family-names: Tedersoo
+        given-names: Leho

@@ -4,10 +4,10 @@
 // What the app does:
 // - shows each of the six dimensions as the predicted median, the lower and
 //   upper bounds of the 90% prediction interval (5% and 95% quantiles) and
-//   the standard deviation, with the classes and colours of Figures 4 and 5
+//   the standard deviation, with the classes and colors of Figures 4 and 5
 //   of the article;
 // - shows the bivariate map EcM-Lin x Div-q1 of Figure 7 (terciles, 3 x 3
-//   colours, share of the land in each class);
+//   colors, share of the land in each class);
 // - on a click, reads the six maps at that point (median and 90% interval);
 // - compares two maps side by side with a swipe;
 // - gives definitions, notes for users, links (Zenodo, code, GloSED) and the
@@ -23,20 +23,20 @@
 // against the monthly noncommercial quota of that project (since April 2026),
 // and when the quota ends the app gets slower, it does not stop.
 //
-// Choices (2026-11-17):
+// Choices:
 // - reads the public assets of 01_assets_setup.js and 02_assets_finalize.js
 //   (EPSG:4326, 0.00225 degrees, 12 strips per map, NoData masked); the app
 //   adds no data, and the Zenodo files (EPSG:8857) stay the reference copy;
-// - classes, colours and labels copied from the tables of the map figures
-//   (fig_map_breaks.csv and fig09_bivariate_classes.csv, written by the
-//   figure script of the article), so the app shows the same maps as the
+// - classes, colors and labels copied from the tables of the map figures
+//   (fig04_05_map_breaks.csv and fig07_bivariate_classes.csv, written by
+//   scripts/05_figures_tables/06_figures4_5_7_maps.R), so the app shows the same maps as the
 //   paper; the 5% and 95% quantiles use the classes of the median (same
 //   units, directly comparable), the standard deviation those of Figure 5;
 // - light computing: map tiles and point queries only, no regional
 //   statistics and no downloads (the files are on Zenodo);
 // - the sample locations are not shown: they belong to GloSED, which is
 //   cited and linked, not redistributed.
-// Discarded: a continuous colour stretch (would not match the figures); the
+// Discarded: a continuous color stretch (would not match the figures); the
 // width of the 90% interval as a map (the article has no classes for it; the
 // interval appears in the values at the clicked point).
 
@@ -49,7 +49,7 @@ var CRS = 'EPSG:4326';
 var CRS_TRANSFORM = [0.00225, 0, -180, 0, -0.00225, 90];
 
 var URL_MAPS = 'https://doi.org/10.5281/zenodo.24292559';
-// authors in the citation format of the group (2026-11-17, Cassio): all
+// authors in the citation format of the group: all
 // authors, surname and initials, separated by semicolons
 var AUTHORS = 'Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt\u00ea, J.A.M.; Fernandes-Filho, E.I.';
 var URL_CODE = 'https://github.com/moquedace/global_soil_fungi';
@@ -413,21 +413,21 @@ para('All six come from fungal OTU read counts (OTUs at 98% similarity), which e
 head('Notes for users');
 para('Skill differs among the dimensions. In 100 spatial hold-out runs per dimension, with ' +
      '2 ' + TIMES + ' 2 degree blocks, the median Nash' + EN + 'Sutcliffe efficiency ranged from ' +
-     '0.12 (Div-q1) to 0.48 (EcM-Lin), and the 90% intervals held 90' + EN + '94% of the test samples.');
+     '0.12 (Div-q1) to 0.48 (EcM-Lin), and the 90% intervals held a median of 90' + EN + '94% of the test samples.');
 para('The mapped land lies a median of 372 km from the nearest sample, and 36% of it lies more ' +
      'than 500 km from any sample. Far from the samples, read the values together with the ' +
      'width of the 90% interval.');
 para('Where neither EcM nor AM fungi were detected, zero replacement gives EcM:AM = ' + MINUS +
-     '0.34. On 18.1% of the land, mostly deserts, the predicted median is ' + MINUS + '0.34: there ' +
+     '0.34 in almost all samples. On 18.1% of the land, mostly deserts, the predicted median is ' + MINUS + '0.34: there ' +
      'the negative sign reflects the scarcity of mycorrhizal reads, not a predominance of AM fungi. ' +
      'ITS primers also underestimate AM fungi.');
 para('Dark-Gen and Sim<97 measure how far the sequences are from the references available at ' +
      'annotation (EUKARYOME 1.9.4, UNITE 10.0).');
-para('Samples are composites of 40 cores (0' + EN + '5 cm) from a 2,500 m' + '\u00b2' +
+para('Samples are mostly composites of 40 cores (0' + EN + '5 cm) from a 2,500 m' + '\u00b2' +
      ' plot, so the maps describe the top 5 cm of soil. Gray land: no prediction (permanent ice, ' +
      'Antarctica and cells without covariates).');
 para('This Earth Engine copy was reprojected from the Zenodo files (Equal Earth, EPSG:8857) to ' +
-     'geographic coordinates at 0.00225 degrees (about 250 m) by nearest neighbour; the Zenodo ' +
+     'geographic coordinates at 0.00225 degrees (about 250 m) by nearest neighbor; the Zenodo ' +
      'files are the reference copy.');
 
 head('How to cite');

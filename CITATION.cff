@@ -72,7 +72,7 @@ authors:
     orcid: "https://orcid.org/0000-0003-2440-8329"
     affiliation: "Department of Soil Science, Universidade Federal de Vi\u00e7osa"
 references:
-  - type: dataset
+  - type: data
     title: "Global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m"
     doi: 10.5281/zenodo.24292559
     authors:
@@ -104,7 +104,7 @@ references:
         given-names: "Jos\u00e9 Alexandre Melo"
       - family-names: Fernandes-Filho
         given-names: "Elp\u00eddio In\u00e1cio"
-  - type: dataset
+  - type: data
     title: "GloSED - Global standardised soil eukaryome dataset"
     version: 1.0.0
     doi: 10.5281/zenodo.17827890

@@ -7,7 +7,7 @@ This repository contains the curated R and Google Earth Engine workflow behind g
   <br><sub>Predicted medians for six dimensions of soil fungal communities at 250 m.</sub>
 </p>
 
-[Maps on Zenodo](https://doi.org/10.5281/zenodo.24292559) &middot; [Quick start](#quick-start) &middot; [Methods and code](docs/methods_and_code.md) &middot; [Citation](#citation)
+[Maps on Zenodo](https://doi.org/10.5281/zenodo.24292559) &middot; [Interactive viewer](https://ee-cassiomoquedace.projects.earthengine.app/view/global-soil-fungi) &middot; [Quick start](#quick-start) &middot; [Methods and code](docs/methods_and_code.md) &middot; [Citation](#citation)
 
 [![Repository validation](https://github.com/moquedace/global_soil_fungi/actions/workflows/validate.yml/badge.svg)](https://github.com/moquedace/global_soil_fungi/actions/workflows/validate.yml) [![Code license MIT](https://img.shields.io/badge/code%20license-MIT-6c757d)](LICENSE)
 
@@ -96,6 +96,8 @@ The model fitting and the spatial hold-out are heavy (days on a single machine);
 ## Data products
 
 The maps are on Zenodo ([10.5281/zenodo.24292559](https://doi.org/10.5281/zenodo.24292559)): one Cloud Optimized GeoTIFF per dimension, six bands (median, sd, q05, q25, q75, q95), 250 m in Equal Earth (EPSG:8857), 16-bit integers with the scale factor in the metadata. The record's README describes the files, units and how to read them.
+
+An [interactive viewer](https://ee-cassiomoquedace.projects.earthengine.app/view/global-soil-fungi) (Earth Engine App, code in [`03_app.js`](scripts/06_distribution/gee/03_app.js)) shows the six maps with the classes of the article, the bivariate map of EcM-Lin and Div-q1, and the values with their 90% prediction interval at any clicked point.
 
 The same maps are public Google Earth Engine assets in geographic coordinates, one ImageCollection per dimension:
 

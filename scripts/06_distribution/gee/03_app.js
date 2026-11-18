@@ -49,6 +49,9 @@ var CRS = 'EPSG:4326';
 var CRS_TRANSFORM = [0.00225, 0, -180, 0, -0.00225, 90];
 
 var URL_MAPS = 'https://doi.org/10.5281/zenodo.24292559';
+// authors in the citation format of the group (2026-11-17, Cassio): all
+// authors, surname and initials, separated by semicolons
+var AUTHORS = 'Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt\u00ea, J.A.M.; Fernandes-Filho, E.I.';
 var URL_CODE = 'https://github.com/moquedace/global_soil_fungi';
 var URL_GLOSED = 'https://doi.org/10.5281/zenodo.17827890';
 
@@ -428,9 +431,12 @@ para('This Earth Engine copy was reprojected from the Zenodo files (Equal Earth,
      'files are the reference copy.');
 
 head('How to cite');
-para('Moquedace, C. M., et al. (2026). Global maps of soil fungal diversity, ectomycorrhizal ' +
+para('Article: ' + AUTHORS + ' Soil fungal diversity is greatest where taxonomic knowledge is ' +
+     'poorest, not where ectomycorrhizal lineages are richest. Manuscript under review; the ' +
+     'reference will be added on publication.');
+para('Maps: ' + AUTHORS + ' (2026). Global maps of soil fungal diversity, ectomycorrhizal ' +
      'structure and taxonomic resolution at 250 m (Version 1.0) [Data set]. Zenodo. ' + URL_MAPS);
-para('Article: manuscript under review. Fungal data: GloSED (Mikryukov et al., 2026), ' + URL_GLOSED);
+para('Fungal data: GloSED (Mikryukov et al., 2026), ' + URL_GLOSED);
 
 panel.add(ui.Button({label: 'About these maps', style: {margin: '14px 0 0 0'},
   onClick: function() { about.style().set('shown', !about.style().get('shown')); }}));

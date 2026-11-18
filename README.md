@@ -15,7 +15,7 @@ This repository contains the curated R and Google Earth Engine workflow behind g
 
 ## Paper first
 
-**Moquedace, C&aacute;ssio M.; Baldi, Clara G. O.; Gomes, Lucas C.; Siqueira, Rafael G.; Xue, Peipei; Minasny, Budiman; Schaefer, Carlos Ernesto G. R.; Francelino, M&aacute;rcio R.; Cerri, Carlos Eduardo P.; Poppiel, Ra&uacute;l R.; Pelegrino, Marcelo H. P.; Soares, Lucas U. L.; Dematt&ecirc;, Jos&eacute; A. M.; Fernandes-Filho, Elp&iacute;dio I.** Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. *Manuscript under review; the reference will be added on publication.*
+**Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I.** Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. *Manuscript under review; the reference will be added on publication.*
 
 The six dimensions follow three different geographies. Overall diversity is highest in the humid tropics, where the share of reads without a genus is also largest; EcM lineage diversity and the representation of EcM fungi are highest in temperate and boreal ecosystems; and high values of overall diversity and EcM lineage diversity coincide no more often than expected by chance.
 
@@ -124,7 +124,9 @@ The scripts keep the published protocol and drop what served only the working en
 
 If you use the code, cite the article and the map dataset. Machine-readable metadata are in [`CITATION.cff`](CITATION.cff).
 
-> Moquedace, C. M., et al. Global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24292559
+> Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I. Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. Manuscript under review; the reference will be added on publication.
+>
+> Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I. (2026). Global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24292559
 
 The fungal data come from GloSED: Mikryukov, V., et al. (2026). Global dataset of soil eukaryotic communities created with a uniform protocol and long read sequencing. *Scientific Data*. https://doi.org/10.1038/s41597-026-07315-y
 

@@ -7,7 +7,7 @@ This repository contains the curated R and Google Earth Engine workflow behind g
   <br><sub>Predicted medians for six dimensions of soil fungal communities at 250 m.</sub>
 </p>
 
-[Maps on Zenodo](https://doi.org/10.5281/zenodo.24292559) &middot; [Interactive viewer](https://ee-cassiomoquedace.projects.earthengine.app/view/global-soil-fungi) &middot; [Quick start](#quick-start) &middot; [Methods and code](docs/methods_and_code.md) &middot; [Citation](#citation)
+[Maps on Zenodo](https://doi.org/10.5281/zenodo.24292559) &middot; [Code on Zenodo](https://doi.org/10.5281/zenodo.24352247) &middot; [Interactive viewer](https://ee-cassiomoquedace.projects.earthengine.app/view/global-soil-fungi) &middot; [Quick start](#quick-start) &middot; [Methods and code](docs/methods_and_code.md) &middot; [Citation](#citation)
 
 [![Repository validation](https://github.com/moquedace/global_soil_fungi/actions/workflows/validate.yml/badge.svg)](https://github.com/moquedace/global_soil_fungi/actions/workflows/validate.yml) [![Code license MIT](https://img.shields.io/badge/code%20license-MIT-6c757d)](LICENSE)
 
@@ -122,7 +122,7 @@ The scripts keep the published protocol and drop what served only the working en
 
 ## Citation
 
-If you use the code, cite the article, the map dataset and this code release. Machine-readable metadata are in [`CITATION.cff`](CITATION.cff).
+If you use the code, cite the article, the map dataset and this code release ([10.5281/zenodo.24352247](https://doi.org/10.5281/zenodo.24352247), all versions; version 1.0.0, the one used in the article: [10.5281/zenodo.24352248](https://doi.org/10.5281/zenodo.24352248)). Machine-readable metadata are in [`CITATION.cff`](CITATION.cff).
 
 > Moquedace, C.M.; Baldi, C.G.O.; Gomes, L.C.; Siqueira, R.G.; Xue, P.; Minasny, B.; Schaefer, C.E.G.R.; Francelino, M.R.; Cerri, C.E.P.; Poppiel, R.R.; Pelegrino, M.H.P.; Soares, L.U.L.; Dematt&ecirc;, J.A.M.; Fernandes-Filho, E.I. Soil fungal diversity is greatest where taxonomic knowledge is poorest, not where ectomycorrhizal lineages are richest. Manuscript under review; the reference will be added on publication.
 >

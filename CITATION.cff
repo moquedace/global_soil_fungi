@@ -3,6 +3,7 @@ message: "If you use this code, please cite the article (under review), the map 
 type: software
 title: "Global soil fungi: R workflow for global maps of soil fungal diversity, ectomycorrhizal structure and taxonomic resolution at 250 m"
 version: 1.0.0
+doi: 10.5281/zenodo.24352248
 license: MIT
 repository-code: "https://github.com/moquedace/global_soil_fungi"
 keywords:

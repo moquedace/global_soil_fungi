@@ -84,7 +84,7 @@ The model fitting and the spatial hold-out are heavy (days on a single machine);
 |   |-- 03_modeling/          # extraction, final model, spatial hold-out
 |   |-- 04_prediction/        # tiled prediction and mosaics
 |   |-- 05_figures_tables/    # Figures 1-8 and S1, Tables S1-S2, numbers in the text
-|   `-- 06_distribution/      # integer copies for Zenodo and Earth Engine (+ gee/)
+|   `-- 06_distribution/      # integer copies for Zenodo and Earth Engine (+ gee/: assets, usage, app)
 |-- tools/                    # documentation checks
 |-- .zenodo.json
 |-- CITATION.cff

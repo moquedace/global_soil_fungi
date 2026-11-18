@@ -23,7 +23,7 @@ software context.
 | Methods, Predictor selection; Model fitting; Text S3 | Filters, RFE and quantile random forest of the final model | [`03_modeling/02_fit_final_model.R`](../scripts/03_modeling/02_fit_final_model.R) |
 | Methods, Assessment of predictive performance; Text S3 | Spatial hold-out repeated 100 times | [`03_modeling/03_spatial_holdout.R`](../scripts/03_modeling/03_spatial_holdout.R), [`hpc/`](../hpc/README.md) |
 | Methods, Map products | Prediction of the six bands per cell, mosaics | [`04_prediction/01_predict_tiles.R`](../scripts/04_prediction/01_predict_tiles.R), [`02_mosaic.R`](../scripts/04_prediction/02_mosaic.R) |
-| Data Availability | Zenodo and Earth Engine copies | [`06_distribution/01_distribution_copy.R`](../scripts/06_distribution/01_distribution_copy.R), [`gee/usage_example.js`](../scripts/06_distribution/gee/usage_example.js) |
+| Data Availability | Zenodo and Earth Engine copies | [`06_distribution/01_distribution_copy.R`](../scripts/06_distribution/01_distribution_copy.R), [`gee/usage_example.js`](../scripts/06_distribution/gee/usage_example.js), [`gee/03_app.js`](../scripts/06_distribution/gee/03_app.js) (Earth Engine App) |
 | Figure 1 | Samples and biomes | [`05_figures_tables/01_figure1_samples_biomes.R`](../scripts/05_figures_tables/01_figure1_samples_biomes.R) |
 | Figure 2 | Observed responses by biome | [`02_figure2_observed_biomes.R`](../scripts/05_figures_tables/02_figure2_observed_biomes.R) |
 | Figure 3 | Predictive performance | [`03_figure3_performance.R`](../scripts/05_figures_tables/03_figure3_performance.R) |
